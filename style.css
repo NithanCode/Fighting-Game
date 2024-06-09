@@ -1,0 +1,228 @@
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34;
+            color: white;
+            flex-direction: column;
+        }
+    
+        .hidden {
+            display: none;
+        }
+    
+        #result {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        #result h2 {
+            font-size: 24px;
+        }
+    
+        #result button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    
+        canvas {
+            border: 1px solid white;
+            background-color: #3c3f41;
+            margin-bottom: 20px;
+        }
+    
+        .buttons, .characters {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        .button, .character {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+    
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #61dafb;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            transition: background-color 0.3s;
+        }
+    
+        .character button {
+            width: 160px;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
+        }
+    
+        .character button.selected {
+            width: 200px;
+            height: 200px;
+        }
+    
+        .character img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    
+        #main-menu, #character-selection, #game {
+            text-align: center;
+        }
+    
+        h1 {
+            margin-bottom: 20px;
+        }
+    
+        #game .buttons .button {
+            margin: 10px;
+        }
+    
+        button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+    
+        .charge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .charge-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+    
+        .charge-circle.blue {
+            background-color: #61dafb; /* Cobalt blue */
+        }
+    
+        .opponent-charge-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+    
+        .opponent-charge-circle.red {
+            background-color: #61dafb; /* Red color */
+        }
+    
+        .player-hp-heart, .opponent-hp-heart {
+            font-size: 20px;
+            color: #ccc;
+            margin: 0 5px;
+        }
+    
+        .player-hp-heart.full, .opponent-hp-heart.full {
+            color: red; /* Full heart color */
+        }
+    
+        .player-hp-heart.empty, .opponent-hp-heart.empty {
+            color: gray; /* Empty heart color */
+        }
+    
+        /* Style the container to create a row layout */
+        .row {
+            display: flex; /* Use flexbox for layout */
+        }
+    
+        /* Style the left column */
+        .left-column {
+            flex: 1; /* Make it flexible to take up remaining space */
+            background-color: black; /* Light gray background */
+            padding: 20px; /* Add some padding for spacing */
+        }
+    
+        /* Style the right column */
+        .right-column {
+            flex: 1; /* Make it flexible to take up remaining space */
+            background-color: black; /* Light gray background */
+            padding: 20px; /* Add some padding for spacing */
+        }
+    
+        /* Additional styles for character and stats container */
+        .character-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    
+        /* Style for the left sub-column (character image) */
+        .character-img-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        /* Style for the character image */
+        .character-img-container img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    
+        /* Style for the right sub-column (HP and charge) */
+        .character-stats {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        /* Styling for full charge circles */
+        .charge-circle.full {
+            color: #61dafb; /* Cobalt blue */
+        }
+    
+        /* Styling for empty charge circles */
+        .charge-circle.empty {
+            color: #ccc; /* Default grey color */
+        }
+    
+        /* Styling for opponent charge circles (if different color is needed) */
+        .opponent-charge-circle.full {
+            color: #61dafb; /* Red color */
+        }
+
+        /* Styling for opponent charge circles (if different color is needed) */
+        .opponent-charge-circle.empty {
+            color: #ccc; /* Red color */
+        }
+
+        /* General styling for HP hearts */
+        .hp-heart {
+            font-size: 20px;
+            color: #0f0; /* Green color */
+            margin: 0 5px;
+        }
+    
+        /* Styling for empty HP hearts */
+        .hp-heart.empty {
+            color: #ccc; /* Default grey color */
+        }
+    
+        /* Container for HP hearts and charge indicators */
+        .hp-charge-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }

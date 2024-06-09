@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div id="main-menu">
+        <h1>Fighting Game</h1>
+        <button onclick="showCharacterSelection()">Play</button>
+    </div>
+
+    <div id="character-selection" class="hidden">
+        <h1>Select Your Character</h1>
+        <div class="characters">
+            <div class="character">
+                <button id="character1" onclick="selectCharacter(1)">
+                    <img id="character1-img" src="hero.png" alt="Hero">
+                </button>
+            </div>
+            <div class="character">
+                <button id="character2" onclick="selectCharacter(2)">
+                    <img id="character2-img" src="devil.png" alt="Devil">
+                </button>
+            </div>
+            <div class="character">
+                <button id="character3" onclick="selectCharacter(3)">
+                    <img id="character3-img" src="sage.png" alt="Sage">
+                </button>
+            </div>
+        </div>
+        
+        <button onclick="confirmCharacter()">Choose</button>
+    </div>
+
+    <div id="game" class="hidden">
+        <div class="row">
+            <div class="left-column">
+                <h2>Player</h2>
+                <div class="character-info">
+                    <div class="character-img-container">
+                        <img id="playerCharacterImg" src="" alt="Player Character">
+                    </div>
+                    <div class="character-stats">
+                        <div id="playerHP" class="hp-charge-container">
+                            <span class="player-hp-heart full">&#x2764;</span>
+                            <span class="player-hp-heart full">&#x2764;</span>
+                            <span class="player-hp-heart full">&#x2764;</span>
+                            <span class="player-hp-heart full">&#x2764;</span>
+                            <span class="player-hp-heart full">&#x2764;</span>
+                        </div>
+                        <div id="playerCharge" class="charge">
+                            <span class="charge-circle empty"></span>
+                            <span class="charge-circle empty"></span>
+                            <span class="charge-circle empty"></span>
+                            <span class="charge-circle empty"></span>
+                            <span class="charge-circle empty"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <h2>Opponent</h2>
+                <div class="character-info">
+                    <div class="character-img-container">
+                        <img id="opponentCharacterImg" src="" alt="Opponent Character">
+                    </div>
+                    <div class="character-stats">
+                        <div id="opponentHP" class="hp-charge-container">
+                            <span class="opponent-hp-heart full">&#x2764;</span>
+                            <span class="opponent-hp-heart full">&#x2764;</span>
+                            <span class="opponent-hp-heart full">&#x2764;</span>
+                            <span class="opponent-hp-heart full">&#x2764;</span>
+                            <span class="opponent-hp-heart full">&#x2764;</span>
+                        </div>
+                        <div id="opponentCharge" class="charge">
+                            <span class="opponent-charge-circle empty"></span>
+                            <span class="opponent-charge-circle empty"></span>
+                            <span class="opponent-charge-circle empty"></span>
+                            <span class="opponent-charge-circle empty"></span>
+                            <span class="opponent-charge-circle empty"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game canvas -->
+        <canvas id="gameCanvas" width="600" height="200"></canvas>
+        
+
+
+    
+        <div class="buttons">
+            <div class="button">
+                <button id="attackButton">▲</button>
+                <label>Attack</label>
+            </div>
+            <div class="button">
+                <button id="defendButton">■</button>
+                <label>Defend</label>
+            </div>
+            <div class="button">
+                <button id="chargeButton">●</button>
+                <label>Charge</label>
+            </div>
+            <div class="button">
+                <button id="skillButton">⬡</button>
+                <label>Skill</label>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2 id="resultText"></h2>
+            <button id="mainMenuButton">Main Menu</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
