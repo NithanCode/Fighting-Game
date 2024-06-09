@@ -26,9 +26,9 @@ There are 4 available actions:
 ## Game Preview
 
 ![Fighting Game Screenshot 1](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex1.png)
-![Fighting Game Screenshot 2](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex2.png)
-![Fighting Game Screenshot 3](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex3.png)
-![Fighting Game Screenshot 4](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex4.png)
+![Fighting Game Screenshot 2](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex.2.png)
+![Fighting Game Screenshot 3](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex.3.png)
+![Fighting Game Screenshot 4](https://github.com/NithanCode/Fighting-Game/blob/main/Fighting%20Game%20Ex.4.png)
 
 ## How to Download and Play
 
